@@ -22,10 +22,31 @@ def routines():
         EP['upper body']=[workouts["Bicep"][r.randint(0, len(workouts["Bicep"])-1)],workouts["Triceps"][r.randint(0, len(workouts["Triceps"])-1)],workouts["BACK"][r.randint(0, len(workouts["BACK"])-1)],workouts["Shoulders"][r.randint(0, len(workouts["Shoulders"])-1)],workouts["Chest"][r.randint(0, len(workouts["Chest"])-1)],workouts["CORE"][r.randint(0, len(workouts["CORE"])-1)]]
         EP['lower body+Plyo']=[workouts["Legs"][r.randint(0, len(workouts["Legs"])-1)],workouts["Legs"][r.randint(0, len(workouts["Legs"])-1)],workouts["Legs"][r.randint(0, len(workouts["Legs"])-1)],workouts["PLYOMETRICS"][r.randint(0, len(workouts["PLYOMETRICS"])-1)],workouts["PLYOMETRICS"][r.randint(0, len(workouts["PLYOMETRICS"])-1)],workouts["PLYOMETRICS"][r.randint(0, len(workouts["PLYOMETRICS"])-1)]]
         EP['Agility+cardio']=[workouts["Agility"][r.randint(0, len(workouts["Agility"])-1)],workouts["Agility"][r.randint(0, len(workouts["Agility"])-1)],workouts["Agility"][r.randint(0, len(workouts["Agility"])-1)],workouts["Cardio"][r.randint(0, len(workouts["Cardio"])-1)],workouts["Cardio"][r.randint(0, len(workouts["Cardio"])-1)],workouts["Cardio"][r.randint(0, len(workouts["Cardio"])-1)]]
-        print(EP)
-        return EP
+        
+    elif position=='Point Guard':
+        EP['upper body']=[workouts["BACK"][r.randint(0, len(workouts["BACK"])-1)],workouts["Shoulders"][r.randint(0, len(workouts["Shoulders"])-1)],workouts["Chest"][r.randint(0, len(workouts["Chest"])-1)],workouts["CORE"][r.randint(0, len(workouts["CORE"])-1)]]
+        EP['lower body+Plyo']=[workouts["Legs"][r.randint(0, len(workouts["Legs"])-1)],workouts["Legs"][r.randint(0, len(workouts["Legs"])-1)],workouts["Legs"][r.randint(0, len(workouts["Legs"])-1)],workouts["PLYOMETRICS"][r.randint(0, len(workouts["PLYOMETRICS"])-1)],workouts["PLYOMETRICS"][r.randint(0, len(workouts["PLYOMETRICS"])-1)],workouts["PLYOMETRICS"][r.randint(0, len(workouts["PLYOMETRICS"])-1)]]
+        EP['Agility+cardio']=[workouts["Agility"][r.randint(0, len(workouts["Agility"])-1)],workouts["Agility"][r.randint(0, len(workouts["Agility"])-1)],workouts["Agility"][r.randint(0, len(workouts["Agility"])-1)],workouts["Cardio"][r.randint(0, len(workouts["Cardio"])-1)],workouts["Cardio"][r.randint(0, len(workouts["Cardio"])-1)],workouts["Cardio"][r.randint(0, len(workouts["Cardio"])-1)]]
+        
+    elif position=='Small Forward':
+        EP['Full body strength ']=[workouts['Legs'][r.randint(0, len(workouts["Legs"])-1)],workouts['Legs'][r.randint(0, len(workouts["Legs"])-1)],workouts['Legs'][r.randint(0, len(workouts["Legs"])-1)],workouts["Bicep"][r.randint(0, len(workouts["Bicep"])-1)],workouts["Triceps"][r.randint(0, len(workouts["Triceps"])-1)],workouts["BACK"][r.randint(0, len(workouts["BACK"])-1)],workouts["Chest"][r.randint(0, len(workouts["Chest"])-1)],workouts["CORE"][r.randint(0, len(workouts["CORE"])-1)],workouts["CORE"][r.randint(0, len(workouts["CORE"])-1)]]
+        EP['Plyo+Agility']= [workouts["Agility"][r.randint(0, len(workouts["Agility"])-1)],workouts["Agility"][r.randint(0, len(workouts["Agility"])-1)],workouts["Agility"][r.randint(0, len(workouts["Agility"])-1)],workouts["PLYOMETRICS"][r.randint(0, len(workouts["PLYOMETRICS"])-1)],workouts["PLYOMETRICS"][r.randint(0, len(workouts["PLYOMETRICS"])-1)],workouts["PLYOMETRICS"][r.randint(0, len(workouts["PLYOMETRICS"])-1)]]
+        EP['Cardio']= [workouts["Cardio"][r.randint(0, len(workouts["Cardio"])-1)],workouts["Cardio"][r.randint(0, len(workouts["Cardio"])-1)],workouts["Cardio"][r.randint(0, len(workouts["Cardio"])-1)]]
+        
+    elif position == 'Power Forward':
+         EP['Full body strength ']=[workouts['Legs'][r.randint(0, len(workouts["Legs"])-1)],workouts['Legs'][r.randint(0, len(workouts["Legs"])-1)],workouts['Legs'][r.randint(0, len(workouts["Legs"])-1)],workouts["Bicep"][r.randint(0, len(workouts["Bicep"])-1)],workouts["Triceps"][r.randint(0, len(workouts["Triceps"])-1)],workouts["BACK"][r.randint(0, len(workouts["BACK"])-1)],workouts["Chest"][r.randint(0, len(workouts["Chest"])-1)],workouts["CORE"][r.randint(0, len(workouts["CORE"])-1)],workouts["CORE"][r.randint(0, len(workouts["CORE"])-1)]],workouts["Shoulders"][r.randint(0, len(workouts["Shoulders"])-1)],workouts["Shoulders"][r.randint(0, len(workouts["Shoulders"])-1)]
+         EP['Plyo+Agility']= [workouts["Agility"][r.randint(0, len(workouts["Agility"])-1)],workouts["Agility"][r.randint(0, len(workouts["Agility"])-1)],workouts["Agility"][r.randint(0, len(workouts["Agility"])-1)],workouts["PLYOMETRICS"][r.randint(0, len(workouts["PLYOMETRICS"])-1)],workouts["PLYOMETRICS"][r.randint(0, len(workouts["PLYOMETRICS"])-1)],workouts["PLYOMETRICS"][r.randint(0, len(workouts["PLYOMETRICS"])-1)]]
+         EP['Cardio']= [workouts["Cardio"][r.randint(0, len(workouts["Cardio"])-1)],workouts["Cardio"][r.randint(0, len(workouts["Cardio"])-1)],workouts["Cardio"][r.randint(0, len(workouts["Cardio"])-1)]]
+         
+    elif position == 'Center':
+         EP['Full body strength ']=[workouts['Legs'][r.randint(0, len(workouts["Legs"])-1)],workouts['Legs'][r.randint(0, len(workouts["Legs"])-1)],workouts['Legs'][r.randint(0, len(workouts["Legs"])-1)],workouts["Bicep"][r.randint(0, len(workouts["Bicep"])-1)],workouts["Triceps"][r.randint(0, len(workouts["Triceps"])-1)],workouts["BACK"][r.randint(0, len(workouts["BACK"])-1)],workouts["Chest"][r.randint(0, len(workouts["Chest"])-1)],workouts["CORE"][r.randint(0, len(workouts["CORE"])-1)],workouts["CORE"][r.randint(0, len(workouts["CORE"])-1)]],workouts["Shoulders"][r.randint(0, len(workouts["Shoulders"])-1)],workouts["Shoulders"][r.randint(0, len(workouts["Shoulders"])-1)]
+         EP['Plyo']= [workouts["PLYOMETRICS"][r.randint(0, len(workouts["PLYOMETRICS"])-1)],workouts["PLYOMETRICS"][r.randint(0, len(workouts["PLYOMETRICS"])-1)],workouts["PLYOMETRICS"][r.randint(0, len(workouts["PLYOMETRICS"])-1)]]
+         EP['Cardio+Agility']= [workouts["Agility"][r.randint(0, len(workouts["Agility"])-1)],workouts["Agility"][r.randint(0, len(workouts["Agility"])-1)],workouts["Agility"][r.randint(0, len(workouts["Agility"])-1)],workouts["Cardio"][r.randint(0, len(workouts["Cardio"])-1)],workouts["Cardio"][r.randint(0, len(workouts["Cardio"])-1)],workouts["Cardio"][r.randint(0, len(workouts["Cardio"])-1)]]
+        
     else:
-        return 0    
+        return 0
+    print(EP)
+    return EP
 routines()
 
 
